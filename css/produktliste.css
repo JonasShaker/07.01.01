@@ -1,0 +1,134 @@
+/* Reset default margin and padding */
+body,
+h1,
+h2,
+h3,
+p,
+a {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: black;
+  text-decoration: none;
+}
+
+body {
+  padding: 0;
+  margin: calc((100vh / 25) * 1.563) calc((100vw / 25) * 1.563);
+  font-weight: 400;
+  line-height: 1.563;
+  color: var(--color);
+  background-color: var(--background-color);
+  caret-color: var(--caret-color);
+}
+/* Reset default margin and padding */
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Flexbox layout */
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Styling for each product article */
+.smallProduct,
+.smallProductonsale,
+.smallProductsoldOut,
+.smallProductsoldOutoneSale {
+  flex-basis: calc(50% - 20px);
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  position: relative; /* For relative positioning of labels */
+}
+
+.smallProduct img,
+.smallProductonsale img,
+.smallProductsoldOut img,
+.smallProductsoldOutoneSale img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Optional: Style for discounted products */
+.discounted {
+  background-color: #f5f5f5;
+  padding: 5px;
+  text-align: center;
+}
+
+/* Sale label styling */
+.sale-label {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: red;
+  color: white;
+  padding: 5px;
+  font-weight: bold;
+}
+
+/* Sold out label styling */
+.sold-out-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px;
+}
+
+/* Optional: Style for "Read More" link */
+.smallProduct a,
+.smallProductonsale a,
+.smallProductsoldOut a,
+.smallProductsoldOutoneSale a {
+  margin-top: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: blue;
+}
+
+/* Styling for Sold Out articles */
+.smallProductsoldOut,
+.smallProductsoldOutoneSale {
+  filter: grayscale(100%);
+  pointer-events: none; /* Disable click events for sold out items */
+}
+
+/* Styling for Sold Out label */
+.smallProductsoldOut .sold-out-label,
+.smallProductsoldOutoneSale .sold-out-label {
+  background-color: rgba(255, 0, 0, 0.8);
+}
+
+/* Styling for Sold Out text */
+.sold-out-text {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: red;
+  font-weight: bold;
+}
+
+/* Styling for Sale tag */
+.sale-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: green;
+  color: white;
+  padding: 5px;
+  font-weight: bold;
+}

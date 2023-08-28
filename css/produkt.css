@@ -1,0 +1,138 @@
+/* Reset default margin and padding */
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dd,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+.mainNav {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainNav h1 {
+  font-size: 24px;
+}
+
+.mainNav nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+/* Breadcrumbs styles */
+.breadcrumbs {
+  list-style: none;
+  padding: 10px 0;
+}
+
+.breadcrumbs li {
+  display: inline;
+  margin-right: 5px;
+}
+
+.breadcrumbs a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Product image styles */
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Purchase box styles */
+.purchaseBox {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.purchaseBox h3 {
+  font-size: 24px;
+}
+
+.purchaseBox p {
+  color: #888;
+}
+
+.purchaseBox form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.purchaseBox select,
+.purchaseBox button {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+.purchaseBox select {
+  margin-bottom: 10px;
+}
+
+.purchaseBox button:hover {
+  background-color: #555;
+}
+
+/* Info section styles */
+.info {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.info dl {
+  margin-bottom: 20px;
+}
+
+.info dt {
+  font-weight: bold;
+}
+
+/* Brand section styles */
+.info h1 {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.info p {
+  color: #888;
+}

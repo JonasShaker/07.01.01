@@ -1,0 +1,44 @@
+/* .muligheder_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 100%;
+  text-align: center;
+  place-items: center;
+  margin-top: 30%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+} */
+/* Style for the link boxes */
+.muligheder_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  gap: 20px; /* Adjust the gap between boxes */
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.muligheder_1 a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  border: 1px solid black;
+  transition: background-color 0.3s;
+}
+
+.muligheder_1 a:hover {
+  background-color: red;
+  color: white;
+}
+
+/* Center the link box grid */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}

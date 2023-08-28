@@ -1,0 +1,56 @@
+/* a {
+  text-decoration: none;
+  color: black;
+}
+
+.kat_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 100%;
+  text-align: center;
+  place-items: center;
+  margin-top: 20%;
+}
+
+.kat_2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 100%;
+  text-align: center;
+  place-items: center;
+  margin-top: 20%;
+} */
+
+/* Style for the link boxes */
+.kat_1,
+.kat_2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  gap: 20px; /* Adjust the gap between boxes */
+}
+
+.kat_1 a,
+.kat_2 a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  border: 1px solid black;
+  transition: background-color 0.3s;
+}
+
+.kat_1 a:hover,
+.kat_2 a:hover {
+  background-color: red;
+  color: white;
+}
+
+/* Center the link box grids */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
