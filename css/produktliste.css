@@ -61,10 +61,14 @@ p {
 
 /* Optional: Style for discounted products */
 .discounted {
-  background-color: #f5f5f5;
+  background-color: #956e6e;
   padding: 5px;
   text-align: center;
 }
+
+/* .discounted {
+  display: none;
+} */
 
 /* Sale label styling */
 .sale-label {
@@ -75,6 +79,10 @@ p {
   color: white;
   padding: 5px;
   font-weight: bold;
+}
+
+.sale-label {
+  display: none;
 }
 
 /* Sold out label styling */
@@ -113,21 +121,22 @@ p {
 }
 
 /* Styling for Sold Out text */
-.sold-out-text {
+.sold-out-text .soldout {
   position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 0;
+  left: 0;
   color: red;
   font-weight: bold;
+  display: block;
 }
-
+.soldout {
+  display: none;
+}
 /* Styling for Sale tag */
 .sale-tag {
-  position: absolute;
   top: 10px;
   left: 10px;
-  background-color: green;
+  background-color: rgb(139, 176, 139);
   color: white;
   padding: 5px;
   font-weight: bold;
