@@ -200,13 +200,12 @@ size {
   color: #2d1300;
 }
 
-.sold-out-text .soldout {
+.soldout {
   position: absolute;
   top: 0;
   left: 0;
   color: red;
   font-weight: bold;
-  display: block;
 }
 
 .discounted {
