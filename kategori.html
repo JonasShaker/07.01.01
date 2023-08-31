@@ -8,17 +8,26 @@
     <link rel="stylesheet" href="css/kategori.css" />
   </head>
   <body>
-    <header>
-      <a href="index.html"><h1>Kategorier Baby</h1></a>
+    <header class="mainNav">
+      <a href="index.html">
+        <h1>Kategori</h1>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="kategori.html">Kategori</a></li>
+        </ul>
+      </nav>
     </header>
-
-    <main>
+    <main class="category-group">
+      <template>
+        <li class="grid-item">
+          <a href="produktliste.html"> Apparel</a>
+        </li></template
+      >
       <div>
-        <div class="kat_1">
-          <div>
-            <a href="produktliste.html"> Apparel</a>
-          </div>
-          <div>
+        <ol class="grid-container"></ol>
+      </div>
+      <!-- <div>
             <a href="produktliste.html"> Accessories</a>
           </div>
         </div>
@@ -29,8 +38,8 @@
           <div>
             <a href="produktliste.html"> Sporting Goods </a>
           </div>
-        </div>
-      </div>
+        </div> -->
     </main>
+    <script src="java/categories.js"></script>
   </body>
 </html>

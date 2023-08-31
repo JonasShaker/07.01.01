@@ -10,12 +10,14 @@ ol,
 li {
   margin: 0;
   padding: 0;
+  color: #2d1300;
 }
 
 /* Global styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
+  background-color: #f9ecde;
+  color: #2d1300;
 }
 
 .container {
@@ -70,7 +72,7 @@ img {
 
 /* Purchase box styles */
 .purchaseBox {
-  background-color: white;
+  background-color: #f9ecde;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -135,4 +137,63 @@ img {
 
 .info p {
   color: #888;
+}
+
+/* nav */
+/* Reset default margin and padding for lists */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Style the main navigation bar */
+.mainNav {
+  background-color: #2d1300;
+  color: #f9ecde;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+/* Style the logo/header text */
+.mainNav h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Style the navigation links */
+.mainNav nav ul {
+  display: flex;
+}
+
+.mainNav nav li {
+  margin: 0 10px;
+  list-style: none;
+}
+
+.mainNav nav a {
+  text-decoration: none;
+  color: #f9ecde;
+}
+
+/* Add hover effect on navigation links */
+.mainNav nav a:hover {
+  color: #2d1300; /* Change to your preferred hover color */
+}
+
+mainNav,
+h1 {
+  color: #f9ecde;
+}
+
+.ModelName {
+  color: #2d1300;
+}
+
+.info,
+size {
+  background-color: #f9ecde;
 }

@@ -1,36 +1,36 @@
-/* .muligheder_1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  max-width: 100%;
-  text-align: center;
-  place-items: center;
-  margin-top: 30%;
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-} */
-/* Style for the link boxes */
+body {
+  background-color: #f9ecde;
+}
+
 .muligheder_1 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   text-align: center;
   gap: 20px; /* Adjust the gap between boxes */
   margin-top: 20px; /* Adjust the margin as needed */
+  background-color: #2d1300;
 }
 
 .muligheder_1 a {
   display: block;
   text-decoration: none;
-  color: black;
+  color: #f9ecde;
   padding: 10px 20px;
   border: 1px solid black;
   transition: background-color 0.3s;
 }
 
 .muligheder_1 a:hover {
-  background-color: red;
+  background-color: #f9ecde;
   color: white;
 }
 
@@ -41,4 +41,44 @@ main {
   align-items: center;
   height: 100vh;
   margin: 0;
+}
+
+.mainNav {
+  background-color: #2d1300;
+  color: #f9ecde;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+/* Style the logo/header text */
+.mainNav h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Style the navigation links */
+.mainNav nav ul {
+  display: flex;
+}
+
+.mainNav nav li {
+  margin: 0 10px;
+  list-style: none;
+}
+
+.mainNav nav a {
+  text-decoration: none;
+  color: #f9ecde;
+}
+
+/* Add hover effect on navigation links */
+.mainNav nav a:hover {
+  color: #2d1300; /* Change to your preferred hover color */
+}
+
+mainNav,
+h1 {
+  color: #f9ecde;
 }
