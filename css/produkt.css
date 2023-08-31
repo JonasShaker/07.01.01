@@ -13,6 +13,9 @@ li {
   color: #2d1300;
 }
 
+a {
+  text-decoration: none;
+}
 /* Global styles */
 body {
   font-family: Arial, sans-serif;
@@ -71,11 +74,6 @@ img {
 }
 
 /* Purchase box styles */
-.purchaseBox {
-  background-color: #f9ecde;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
 
 .purchaseBox h3 {
   font-size: 24px;
@@ -121,11 +119,11 @@ img {
   margin-bottom: 10px;
 }
 
-.info dl {
+.dl {
   margin-bottom: 20px;
 }
 
-.info dt {
+dt {
   font-weight: bold;
 }
 
@@ -196,4 +194,47 @@ h1 {
 .info,
 size {
   background-color: #f9ecde;
+}
+
+.variantnam {
+  color: #2d1300;
+}
+
+.sold-out-text .soldout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: red;
+  font-weight: bold;
+  display: block;
+}
+
+.discounted {
+  display: flex;
+  align-items: center;
+}
+
+.discounted .p2 {
+  margin: 0;
+  padding: 5px;
+  background-color: #ffcc00; /* Adjust as needed */
+}
+
+.discounted .p3 {
+  margin: 0;
+  padding: 5px;
+  background-color: #ff0000; /* Adjust as needed */
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.purchaseBox {
+  background-color: #f9ecde;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 4%;
 }
